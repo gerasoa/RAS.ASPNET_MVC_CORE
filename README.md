@@ -12,3 +12,6 @@
 - To Create Database Tables
    Update-Database -Context ApplicationDbContext
    Update-Database -Context BookShopDbContext
+   
+   -AutoMapper
+   Install-Package Automapper.extensions.microsoft.dependencyInjection
