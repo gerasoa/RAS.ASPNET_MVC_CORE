@@ -43,6 +43,6 @@ namespace RAS.App.ViewModels
 
         public FornecedorViewModel Fornecedor { get; set; }
 
-        //public IEnumerable<FornecedorViewModel> Fornecedores { get; set; }
+        public IEnumerable<FornecedorViewModel> Fornecedores { get; set; }
     }
 }
