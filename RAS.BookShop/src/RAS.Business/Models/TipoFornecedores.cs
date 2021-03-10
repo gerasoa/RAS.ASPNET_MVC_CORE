@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RAS.Business.Models
 {
-    public enum SuplierType
+    public enum TipoFornecedor
     {
         PessoaFisica = 1,
         PessoaJuridica
