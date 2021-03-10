@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RAS.Business.Models
 {
-    public class Address : Entity
+    public class Endereco : Entity
     {
         public Guid FornecedorId { get; set; }
         public string Street { get; set; }
@@ -17,6 +17,6 @@ namespace RAS.Business.Models
 
 
         /* EF Relation */
-        public Suplier Suplier { get; set; }
+        public Fornecedor Fornecedor { get; set; }
     }
 }
