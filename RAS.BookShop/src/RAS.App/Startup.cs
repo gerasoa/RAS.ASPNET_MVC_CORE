@@ -16,6 +16,7 @@ using Microsoft.Extensions.DependencyInjection;
 using RAS.Data.Context;
 using RAS.Business.Interfaces;
 using RAS.Data.Repository;
+using AutoMapper;
 
 namespace RAS.App
 {
@@ -47,6 +48,8 @@ namespace RAS.App
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddAutoMapper(typeof(Startup));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
