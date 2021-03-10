@@ -4,7 +4,8 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using RAS.App.Models;
+using RAS.App.ViewModels;
+
 
 namespace RAS.App.Controllers
 {

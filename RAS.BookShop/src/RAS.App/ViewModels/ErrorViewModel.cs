@@ -1,6 +1,6 @@
 using System;
 
-namespace RAS.App.Models
+namespace RAS.App.ViewModels
 {
     public class ErrorViewModel
     {
