@@ -14,6 +14,8 @@ using RAS.App.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RAS.Data.Context;
+using RAS.Business.Interfaces;
+using RAS.Data.Repository;
 
 namespace RAS.App
 {
@@ -47,6 +49,12 @@ namespace RAS.App
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            
+            services.AddScoped<BookShopDbContext>();
+            services.AddScoped<IProdutoRepository, ProdutoRepository>();
+            services.AddScoped<IFornecedorRepository, FornecedorRepository>();
+            services.AddScoped<IEnderecoRepository, EnderecoRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
