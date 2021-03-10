@@ -15,9 +15,9 @@ namespace RAS.Data.Context
 
         }
 
-        public DbSet<Produto> Products { get; set; }
-        public DbSet<Endereco> Adresses { get; set; }
-        public DbSet<Fornecedor> Supliers { get; set; }
+        public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Endereco> Enderecos { get; set; }
+        public DbSet<Fornecedor> Fornecedores { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
