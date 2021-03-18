@@ -14,7 +14,7 @@ namespace RAS.App.ViewModels
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         [StringLength(200, ErrorMessage = "O campo {0} precisa ter entre {1} e {2} caracteres", MinimumLength = 1)]
-        public string Logradouro { get; set; }
+        public string Street { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         [StringLength(50, ErrorMessage = "O campo {0} precisa ter entre {1} e {2} caracteres", MinimumLength = 2)]

@@ -122,12 +122,12 @@ namespace RAS.App.Controllers
 
         private async Task<FornecedorViewModel> ObterFornecedorEndereco(Guid id)
         {
-            return Mapper.Map<FornecedorViewModel>(await _fornecedorRespository.ObterFornecedorEndereco(id));
+            return _mapper.Map<FornecedorViewModel>(await _fornecedorRespository.ObterFornecedorEndereco(id));
         }
 
         private async Task<FornecedorViewModel> ObterFornecedorProdutoEndereco(Guid id)
         {
-            return Mapper.Map<FornecedorViewModel>(await _fornecedorRespository.ObterFornecedorProdutoEndereco(id));
+            return _mapper.Map<FornecedorViewModel>(await _fornecedorRespository.ObterFornecedorProdutoEndereco(id));
         }
     }
 }
